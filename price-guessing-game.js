@@ -21,16 +21,16 @@ function checkGuess(number ){
   let instruction = document.createElement('div');
 
   if(number  < randomNumber  ) {
-    instruction.textContent = "#" + coups + " ( " + number  + " ) C'est plus !";
+    instruction.textContent = "#" + coups + " ( " + number  + " ) It's higher !";
     instruction.className ="instruction moins"
 
   }
   else if(number  > randomNumber ) {
-    instruction.textContent = "#" + coups + " ( " + number  + " ) C'est moins !";
+    instruction.textContent = "#" + coups + " ( " + number  + " ) It's lower !";
     instruction.className = "instruction plus"
   }
   else {
-    instruction.textContent = "#" + coups + " ( " + number  + " ) Félicitations vous avez trouvé le juste prix !";
+    instruction.textContent = "#" + coups + " ( " + number  + " ) You've correctly guessed the price. Congratulations !";
     instruction.className = "instruction fini";
     input.disabled = true;
   }
